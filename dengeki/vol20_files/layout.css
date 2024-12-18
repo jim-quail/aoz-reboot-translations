@@ -1,0 +1,367 @@
+@charset "utf-8";
+
+/*-----------------------------------------------
+ main
+-----------------------------------------------*/
+
+div#main{
+	position: relative;
+	width: 1230px;
+	height: 1721px;
+	margin: 0 auto;
+}
+
+div#main div.visual{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1230px;
+	height: 1721px;
+}
+
+div#main div.visual img{
+	width: 1230px;
+	height: 1721px;
+}
+
+div#main div.name-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1230px;
+	height: 1721px;
+	background-image: url(../img/name.png);
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+}
+
+/* ズーム */
+
+body.off{
+	cursor: auto !important;
+}
+
+div#ok-loupe.off{
+	display: none !important;
+}
+
+div#ok-loupe{
+	cursor: pointer !important;
+	background-color: #b7afac !important;
+}
+
+div#main h1{
+	position: absolute;
+	top: 0;
+	left: 73px;
+	line-height: 0;
+}
+
+div#main div.label{
+	position: absolute;
+	top: 0;
+    left: 412px;
+	line-height: 0;
+}
+
+div#main p.txt{
+	position: absolute;
+	top: 42px;
+    left: 476px;
+    width: 670px;
+    line-height: 1.4;
+    font-size: 12px;
+    color: #fff;
+}
+
+div#main div.select{
+	cursor: pointer;
+	z-index: 9000;
+	position: absolute;
+    top: 27px;
+    left: 1168px;
+}
+
+div.select2{
+	display: none;
+}
+
+/*-----------------------------------------------
+ visual
+-----------------------------------------------*/
+
+div#main div.image1{
+    position: absolute;
+    top: 132px;
+    left: 115px;
+}
+
+div#main div.image2{
+    position: absolute;
+    top: 218px;
+    left: 874px;
+}
+
+div#main div.image3{
+    position: absolute;
+    top: 399px;
+    left: 1011px;
+}
+
+div#main div.image4{
+    position: absolute;
+    top: 1069px;
+    left: -1px;
+}
+
+div#main div.image5{
+    position: absolute;
+    top: 951px;
+    left: 251px;
+}
+
+div#main div.image6{
+    position: absolute;
+    top: 1332px;
+    left: 807px;
+}
+
+div.copy{
+    position: absolute;
+    top: 1677px;
+    left: 0;
+}
+
+/*-----------------------------------------------
+ detail
+-----------------------------------------------*/
+
+div#main div.detail p{
+	font-size: 12px;
+	line-height: 1.5;
+	color: #fff;
+}
+
+div#main div.detail{
+	position: absolute;
+	padding: 13px;
+	background-color: rgba(183,175,172,0.9);
+}
+
+div#main div.detail div.bdT{width: 100%; height:1px; top:0; left:0;}
+div#main div.detail div.bdB{width: 100%; height:1px; bottom:0; right:0;}
+div#main div.detail div.bdR{height:100%; width :1px; right:0; top:0;}
+div#main div.detail div.bdL{height:100%; width :1px; left:0; bottom:0;}
+div#main div.detail div{background: #fff; position:absolute;-webkit-transition:all 0.3s;transition:all 0.3s;}
+
+div#main div.detail {opacity: 0;transition:all 1s;}
+
+div#main div.detail.active{opacity: 1;transition:all 1s;}
+div#main div.detail.active div{opacity:1;-webkit-transition:all 0.1s;transition:all 0.1s;}
+div#main div.detail.active div.bdT{opacity:1;width: 100%; height:1px;transition-delay:0.3s;}
+div#main div.detail.active div.bdL{opacity:1;height:100%; width :1px;transition-delay:0.2s;}
+div#main div.detail.active div.bdB{opacity:1;width: 100%; height:1px;transition-delay:0.1s;}
+div#main div.detail.active div.bdR{opacity:1;height:100%; width :1px;transition-delay:0s;}
+
+div#main div.detail {opacity:0;transition:all 1s;}
+div#main div.detail div.bdT{width: 0;transition-delay:0s;}
+div#main div.detail div.bdL{height:0;transition-delay:0.1s;}
+div#main div.detail div.bdB{width: 0;transition-delay:0.2s;}
+div#main div.detail div.bdR{height:0;transition-delay:0.3s;}
+
+
+div#main div.detail1{
+    top: 241px;
+    left: 9px;
+	width: 215px;
+}
+
+div#main div.detail2{
+    top: 169px;
+    left: 564px;
+    width: 185px;
+}
+
+div#main div.detail3{
+    top: 210px;
+    left: 854px;
+    width: 350px;
+}
+
+div#main div.detail4{
+    top: 603px;
+    left: 9px;
+    width: 172px;
+}
+
+div#main div.detail5{
+    top: 629px;
+    left: 1011px;
+    width: 300px;
+}
+
+div#main div.detail6{
+    top: 808px;
+    left: 978px;
+    width: 226px;
+}
+
+div#main div.detail7{
+    top: 839px;
+    left: 9px;
+    width: 295px;
+}
+
+div#main div.detail8{
+    top: 1055px;
+    left: 955px;
+    width: 214px;
+}
+
+div#main div.detail9{
+    top: 1130px;
+    left: 34px;
+    width: 325px;
+}
+
+div#main div.detail10{
+    top: 1319px;
+    left: 833px;
+    width: 354px;
+}
+
+div#main div.detail11{
+    top: 1454px;
+    left: 629px;
+    width: 450px;
+}
+
+/*-----------------------------------------------
+ name
+-----------------------------------------------*/
+
+p.name{
+	z-index: 9000;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+}
+
+p.name1{
+	cursor: pointer;
+	position: absolute;
+    top: 218px;
+    left: 10px;
+}
+
+p.name2{
+	cursor: pointer;
+	position: absolute;
+    top: 138px;
+    left: 564px;
+}
+
+p.name3{
+	cursor: pointer;
+	position: absolute;
+    top: 129px;
+    left: 854px;
+}
+
+p.name4{
+	cursor: pointer;
+	position: absolute;
+    top: 580px;
+    left: 9px;
+}
+
+p.name5{
+	cursor: pointer;
+	position: absolute;
+    top: 605px;
+    left: 1009px;
+}
+
+p.name6{
+	cursor: pointer;
+	position: absolute;
+    top: 758px;
+    left: 1004px;
+}
+
+p.name7{
+	cursor: pointer;
+	position: absolute;
+    top: 958px;
+    left: 9px;
+}
+
+p.name8{
+	cursor: pointer;
+	position: absolute;
+    top: 1030px;
+    left: 980px;
+}
+
+p.name9{
+	cursor: pointer;
+	position: absolute;
+    top: 1097px;
+    left: 31px;
+}
+
+p.name10{
+	cursor: pointer;
+	position: absolute;
+    top: 1294px;
+    left: 830px;
+}
+
+p.name11{
+	cursor: pointer;
+	position: absolute;
+    top: 1661px;
+    left: 626px;
+}
+
+/*-----------------------------------------------
+ rewrite
+-----------------------------------------------*/
+
+.postContents #aoz img{
+	padding: 0;
+}
+
+h3.ttlC{
+	display: none;
+}
+
+#container{
+	background-color: #B8AFAC;
+}
+
+#contents {
+	background-color: #B8AFAC;
+}
+
+#contents{
+	padding-top: 0;
+}
+
+
+/* リニューアル後追加 */
+
+#contents{
+	width: auto;
+}
+
+div.postContents img{
+	border: none;
+}
+
+.postContents{
+	border: none;
+    margin-top: 0;
+    padding-top: 0;
+ }
