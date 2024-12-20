@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+/*-----------------------------------------------
+ main
+-----------------------------------------------*/
+
+body{
+}
+
+div#main{
+	position: relative;
+	width: 1230px;
+	height: 1721px;
+	margin: 0 auto;
+}
+
+div#main div.visual{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1230px;
+	height: 1721px;
+}
+
+div#main div.visual img{
+	width: 1230px;
+	height: 1721px;
+}
+
+div#main div.name-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1230px;
+	height: 1721px;
+	background-image: url(../img/name.png);
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+}
+
+/* ズーム */
+
+body.off{
+	cursor: auto !important;
+}
+
+div#ok-loupe.off{
+	display: none !important;
+}
+
+div#ok-loupe{
+	cursor: pointer !important;
+	background-color: #b7afac !important;
+}
+
+div#main h1{
+	position: absolute;
+	top: 0;
+	left: 73px;
+	line-height: 0;
+}
+
+div#main div.label{
+	position: absolute;
+	top: 0;
+    left: 412px;
+	line-height: 0;
+}
+
+div#main p.txt{
+	position: absolute;
+	top: 42px;
+    left: 476px;
+    width: 670px;
+    line-height: 1.4;
+    font-size: 12px;
+    color: #fff;
+}
+
+div#main div.select{
+	cursor: pointer;
+	z-index: 9000;
+	position: absolute;
+    top: 27px;
+    left: 1168px;
+}
+
+div.select2{
+	display: none;
+}
+
+/*-----------------------------------------------
+ visual
+-----------------------------------------------*/
+
+div.copy{
+    position: absolute;
+    top: 1677px;
+    left: 0;
+}
+
+/*-----------------------------------------------
+ detail
+-----------------------------------------------*/
+
+div#main div.detail p{
+	font-size: 12px;
+	line-height: 1.5;
+	color: #fff;
+}
+
+div#main div.detail{
+	position: absolute;
+	padding: 13px;
+	background-color: rgba(183,175,172,0.9);
+}
+
+div#main div.detail div.bdT{width: 100%; height:1px; top:0; left:0;}
+div#main div.detail div.bdB{width: 100%; height:1px; bottom:0; right:0;}
+div#main div.detail div.bdR{height:100%; width :1px; right:0; top:0;}
+div#main div.detail div.bdL{height:100%; width :1px; left:0; bottom:0;}
+div#main div.detail div{background: #fff; position:absolute;-webkit-transition:all 0.3s;transition:all 0.3s;}
+
+div#main div.detail {opacity: 0;transition:all 1s;}
+
+div#main div.detail.active{opacity: 1;transition:all 1s;}
+div#main div.detail.active div{opacity:1;-webkit-transition:all 0.1s;transition:all 0.1s;}
+div#main div.detail.active div.bdT{opacity:1;width: 100%; height:1px;transition-delay:0.3s;}
+div#main div.detail.active div.bdL{opacity:1;height:100%; width :1px;transition-delay:0.2s;}
+div#main div.detail.active div.bdB{opacity:1;width: 100%; height:1px;transition-delay:0.1s;}
+div#main div.detail.active div.bdR{opacity:1;height:100%; width :1px;transition-delay:0s;}
+
+div#main div.detail {opacity:0;transition:all 1s;}
+div#main div.detail div.bdT{width: 0;transition-delay:0s;}
+div#main div.detail div.bdL{height:0;transition-delay:0.1s;}
+div#main div.detail div.bdB{width: 0;transition-delay:0.2s;}
+div#main div.detail div.bdR{height:0;transition-delay:0.3s;}
+
+
+div#main div.mark{
+	z-index: 10;
+	position: absolute;
+    top: 96px;
+    left: -33px;
+}
+
+div#main div.detail1{
+    top: 314px;
+    left: 101px;
+    width: 317px;
+}
+
+div#main div.detail2{
+	top: 821px;
+    left: 837px;
+    width: 330px;
+}
+
+div#main div.detail3{
+    top: 1109px;
+    left: 379px;
+    width: 305px;
+}
+
+/*-----------------------------------------------
+ name
+-----------------------------------------------*/
+
+p.name{
+	z-index: 9000;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+}
+
+p.name1{
+	cursor: pointer;
+	position: absolute;
+    top: 256px;
+    left: 99px;
+}
+
+p.name2{
+	cursor: pointer;
+	position: absolute;
+    top: 740px;
+    left: 834px;
+}
+
+p.name3{
+	cursor: pointer;
+	position: absolute;
+    top: 1029px;
+    left: 375px;
+}
+
+/*-----------------------------------------------
+ rewrite
+-----------------------------------------------*/
+
+.postContents #aoz img{
+	padding: 0;
+}
+
+h3.ttlC{
+	display: none;
+}
+
+#container{
+	background-color: #B8AFAC;
+}
+
+#contents {
+	background-color: #B8AFAC;
+}
+
+#contents{
+	padding-top: 0;
+	overflow: visible;
+}
+
+
+/* リニューアル後追加 */
+
+#contents{
+	width: auto;
+}
+
+div.postContents img{
+	border: none;
+}
+
+.postContents{
+	border: none;
+    margin-top: 0;
+    padding-top: 0;
+ }
